@@ -395,14 +395,46 @@ decimal place.
 
 - `cleaned_data.csv` — input, produced by Part 1
 - `best_model.pkl` — the serialized, tuned Random Forest pipeline (14.4 MB)
-- `plots/learning_curve.png` — training vs test AUC across five training-set fractions
 - `README.md` — this file
 
-## How to reproduce
+## How to Reproduce
+
+### 1. Clone the repository
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn joblib
-python3 llm_structured.ipynb
+git clone https://github.com/Jayaprada6/Part3.git
+cd Part3
 ```
+
+### 2. Install the required packages
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn joblib jupyter
+```
+
+### 3. Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+or
+
+```bash
+jupyter lab
+```
+
+### 4. Open the notebook
+
+Open:
+
+```
+llm_structured.ipynb
+```
+
+### 5. Run all cells
+
+Run the notebook from the first cell to the last to reproduce the complete implementation and outputs.
+
 Note: `GridSearchCV` in Task 6 runs 90 model fits and can take several
 minutes on a single-core machine.
